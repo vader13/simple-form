@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" rel="stylesheet">
+    <title>Form</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 id="title" class="center-text">Survey Form</h1>
+        <p id="description" class="center-text">Please take a couple of minutes to help us make our platform better</p>
+        <form id="survey-form">
+            <div class="form-block" required>
+                <label id="name-label">Name</label>
+                <input class="full-width" id="name" placeholder="My name" type="text"></input>
+            </div>
+            <div class="form-block">
+                <label id="email-label">Email</label>
+                <input class="full-width" id="email" placeholder="My Email" type="email" name="email"></input>
+            </div>
+            <div class="form-block">
+                <label id="number-label">Age</label>
+                <input class="full-width" type="number" id="number" placeholder="Age" name="number" min="1"
+                    max="100"></input>
+            </div>
+
+
+            <div class="form-block">
+                <label>What best describes you?</label>
+                <select id="dropdown">
+                    <option disabled selected value>Choose</option>
+                    <option value="student">Student</option>
+                    <option value="fulltime">Full-time Job</option>
+                    <option value="parttime">Part-time Job</option>
+                    <option value="jobseeker">Job Seeker</option>
+                </select>
+            </div>
+            <div class="form-block">
+                <label>Gender</label>
+                <label>
+                    <input name="user-gender" value="male" type="radio" class="input-radio" checked />Male
+                </label>
+
+
+
+                <label>
+                    <input name="user-gender" value="female" type="radio" class="input-radio" checked />Female
+                </label>
+
+
+                <label>
+                    <input name="user-gender" value="other" type="radio" class="input-radio" checked />other
+                </label></div>
+
+            <div class="form-block">
+                <label>Skills</label>
+                <label>
+                    <input name="skills" value="html" type="checkbox" class="input-checkbox" />
+                    HTML
+                </label>
+
+
+                <label>
+                    <input name="skills" value="css" type="checkbox" class="input-checkbox" />
+                    CSS
+                </label>
+
+
+                <label>
+                    <input name="skills" value="javascript" type="checkbox" class="input-checkbox" />
+                    Javascript
+                </label></div>
+
+            <div class="form-block">
+                <label>Additional Comments</label>
+                <textarea></textarea>
+            </div>
+
+            <div class="form-block">
+                <input class="submit-button" type="submit" value="Submit" id="submit"></div>
+        </form>
+    </div>
+</body>
+
+</html>
